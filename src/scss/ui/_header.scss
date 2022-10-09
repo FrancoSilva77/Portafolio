@@ -3,7 +3,7 @@
 
 .header {
   background-color: v.$azul;
-  padding: 2rem;
+  padding: 3rem 2rem;
 
   &__contenido {
     display: flex;
@@ -21,7 +21,28 @@
   }
 }
 
+.menu-mobile {
+  @include m.tablet {
+    display: none;
+  }
+}
+
+.ph-list {
+  text-align: center;
+  font-size: 4rem;
+  margin: 1rem 0;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
 .navegacion {
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  transition: visibility .3s ease-in-out, opacity 0.5s linear, height .5s linear;
+  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -45,4 +66,10 @@
       border-radius: .5rem;
     }
   }
+}
+
+.mostrar {
+  visibility: visible;
+  opacity: 1;
+  height: auto;
 }
