@@ -1,0 +1,27 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.habilidades {
+  text-align: center;
+  margin-top: 5rem;
+
+  &__lista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  &__habilidad {
+    background-color: v.$blanco;
+    border: 1px solid v.$azul;
+    color: v.$azul;
+    padding: 1rem;
+    border-end-end-radius: .5rem;
+    border-top-right-radius: .5rem;
+    font-size: 2rem;
+    min-width: 40%;
+    margin: 1rem 0 0 0;
+    font-weight: v.$bold;
+    border-left: .5rem solid v.$azul;
+  }
+}
