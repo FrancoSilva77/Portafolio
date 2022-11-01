@@ -52,6 +52,8 @@
   @include m.tablet {
     flex-direction: row;
     margin-top: 0;
+    visibility: visible;
+    opacity: 1;
   }
 
   &__link {
