@@ -1,0 +1,43 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.sobre-mi {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 5rem;
+  gap: 5rem;
+
+  @include m.tablet {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__foto {
+    flex: 3;
+    width: 30rem;
+    height: 30rem;
+    display: block;
+    margin: 0 auto;
+
+    @include m.tablet {
+      width: 40rem;
+      height: 40rem;
+    }
+  }
+
+  &__contenido {
+    flex: 1;
+  }
+
+  &__heading {
+    margin: 0;
+  }
+
+  &__texto {
+    padding: 2rem;
+    margin: 0;
+    line-height: 1.5;
+    font-size: 1.8rem;
+  }
+}

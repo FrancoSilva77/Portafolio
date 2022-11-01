@@ -8,11 +8,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-    href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap"
-    rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap"
+      rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/phosphor-icons"></script>
-    <link rel="stylesheet" href="public/build/css/app.css">
+    <link rel="stylesheet" href="public/build/css/app.css" />
   </head>
   <body>
     <header class="header">
@@ -22,7 +23,7 @@
         <div class="menu-mobile">
           <i class="ph-list"></i>
         </div>
-        
+
         <nav class="navegacion">
           <a class="navegacion__link" href="#">Sobre Mi</a>
           <a class="navegacion__link" href="#">Habilidades</a>
@@ -31,6 +32,42 @@
         </nav>
       </div>
     </header>
+
+    <main class="sobre-mi contenedor">
+      <picture>
+        <source srcset="/public/build/img/foto.webp" type="image/webp" />
+        <img
+          data-aos="zoom-in-up"
+          data-aos-duration="1500"
+          class="sobre-mi__foto"
+          loading="lazy"
+          src="/public/build/img/foto.jpeg"
+          width="500"
+          height="300"
+          alt=""
+        />
+      </picture>
+
+      <div class="sobre-mi__contenido">
+        <h2 class="sobre-mi__heading">Sobre Mi</h2>
+        <p class="sobre-mi__texto">
+          Hola, mi nombre es Franco Silva y soy desarrollador web, hago páginas
+          web con las tecnologías más modernas para negocios ya que esto ayuda a
+          que más gente conozca la existencia de este. Me gusta resolver
+          problemas aplicando ingeniería de software.
+        </p>
+        <p class="sobre-mi__texto">
+          Estudio ingeniería en sistemas computacionales y actualmente estoy
+          cursando el 7mo semestre. Me gusta mucho leer y aprender nuevas
+          tecnologías.
+        </p>
+      </div>
+    </main>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="public/build/js/app.js"></script>
   </body>
 </html>
