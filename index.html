@@ -25,15 +25,15 @@
         </div>
 
         <nav class="navegacion">
-          <a class="navegacion__link" href="#">Sobre Mi</a>
-          <a class="navegacion__link" href="#">Habilidades</a>
-          <a class="navegacion__link" href="#">Proyectos</a>
-          <a class="navegacion__link" href="#">Contacto</a>
+          <a class="navegacion__link" href="#sobre-mi">Sobre Mi</a>
+          <a class="navegacion__link" href="#habilidades">Habilidades</a>
+          <a class="navegacion__link" href="#proyectos">Proyectos</a>
+          <a class="navegacion__link" href="#contacto">Contacto</a>
         </nav>
       </div>
     </header>
 
-    <main class="sobre-mi contenedor">
+    <main class="sobre-mi contenedor" id="sobre-mi">
       <picture>
         <source srcset="/public/build/img/foto.webp" type="image/webp" />
         <img
@@ -64,7 +64,7 @@
       </div>
     </main>
 
-    <section class="habilidades contenedor">
+    <section class="habilidades contenedor" id="habilidades">
       <h2 class="hablilidades__heading">Habilidades</h2>
 
       <div class="habilidades__lista">
@@ -79,7 +79,7 @@
       </div>
     </section>
 
-    <section class="proyectos contenedor">
+    <section class="proyectos contenedor" id="proyectos">
       <h2 class="proyectos__heading">Proyectos</h2>
 
       <div class="proyectos__grid">
@@ -115,7 +115,7 @@
         <div class="proyecto" data-aos="fade-down-left">
           <picture>
             <source
-              srcset="/public/build/img/proyecto_2.webp"
+              srcset="/public/build/img/proyecto_6.webp"
               type="image/webp"
             />
             <img
@@ -127,16 +127,17 @@
               alt=""
             />
           </picture>
-          <h3 class="proyecto__heading">Bienes Raíces</h3>
+          <h3 class="proyecto__heading">Agencia de Viajes</h3>
           <div class="proyecto__tecnologias">
             <p class="proyecto__tecnologia">HTML</p>
             <p class="proyecto__tecnologia">CSS</p>
             <p class="proyecto__tecnologia">Javascript</p>
-            <p class="proyecto__tecnologia">SCSS</p>
+            <p class="proyecto__tecnologia">MySql</p>
+            <p class="proyecto__tecnologia">Node</p>
           </div>
           <a
             target="_blank"
-            href="https://bienes-raices-fs.netlify.app/"
+            href="https://agencia-viajes-production.up.railway.app/"
             class="proyecto__enlace"
             >Ver proyecto</a
           >
@@ -236,7 +237,7 @@
       </div>
     </section>
 
-    <section class="contacto">
+    <section class="contacto" id="contacto">
       <h2 class="contacto__heading">Contacto</h2>
 
       <div class="contacto__formas">
